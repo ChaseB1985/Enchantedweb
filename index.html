@@ -5,8 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.css" />
+
+<script>
+$(function() {
+  var $timer = $('#timer');
+  var $countdownText = $('#countdownText');
+  var now = moment();
+  var openingToday = moment({
+    hour: 8
+  });
+  var closingTime = moment({
+    hour: 17
+  });
+  var openingTime = moment({
+    year: now.year(),
+    month: now.month(),
+    date: now.date() + 1,
+    hour: 8
+  });
+  if (now.diff(openingToday) < 0) {
+    $timer.countdown({
+      until: openingToday._d
+    });
+    $countdownText.addClass('closed');
+  } else if (now.diff(closingTime) < 0) {
+    $timer.countdown({
+      until: closingTime._d
+    });
+    $countdownText.addClass('opened');
+  } else {
+    $timer.countdown({
+      until: openingTime._d
+    });
+    $countdownText.addClass('closed');
+  }
+});
+</script>    
 </head>
 <body>
-    
+        <div id="countdownText">
+                <span class="open">Opening in</span>
+                <span class="close">Closing in</span>
+              </div>
+              <div id="timer"></div>
 </body>
 </html>

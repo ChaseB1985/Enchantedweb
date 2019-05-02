@@ -2,3 +2,11 @@ body {
     padding-top: 50px;
   }
   
+  #countdownText span {
+    display: none;
+  }
+  
+  #countdownText.opened .close,
+  #countdownText.closed .open {
+    display: inline;
+  }
