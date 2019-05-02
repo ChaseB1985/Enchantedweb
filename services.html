@@ -9,9 +9,30 @@
     <link rel="stylesheet" href="assets/stylesheet/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script>
+        $(document).ready(function(){
+        $(".change").on({
+
+            mouseenter: function(){
+                $(this).css("background-color", "yellow");
+                $(this).css("font-size", "24px");
+                $(this).css("color", "black");
+                $(this).css("font-family", "arial");
+                },
+            mouseleave: function(){
+                $(this).css("background-color", "black");
+                $(this).css("font-size", "24px");
+                $(this).css("color", "yellow");
+                $(this).css("font-family", "arial");
+            }  
+        });
+    });
+</script>
 </head>
+
+
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top change">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,4 +61,6 @@
         
       </div><!-- /.container -->
 </body>
+
 </html>
+
