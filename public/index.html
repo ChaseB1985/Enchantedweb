@@ -50,6 +50,24 @@ $(function() {
     $countdownText.addClass('closed');
   }
 });
+
+$(document).ready(function(){
+        $(".change").on({
+
+            mouseenter: function(){
+                $(this).css("background-color", "yellow");
+                $(this).css("font-size", "24px");
+                $(this).css("color", "black");
+                $(this).css("font-family", "Vidaloka", "serif");
+                },
+            mouseleave: function(){
+                $(this).css("background-color", "black");
+                $(this).css("font-size", "24px");
+                $(this).css("color", "yellow");
+                $(this).css("font-family", "Vidaloka", "serif");
+            }  
+        });
+    });
 </script>    
 </head>
 <body>
@@ -61,22 +79,28 @@ $(function() {
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Enchanted Lighting</a>
+                    <a class="navbar-brand" href="/index">Enchanted Lighting</a>
                   </div>
                   <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a href="services.html">Services</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                      <li><a href="#products">Products</a></li>
+                      <li class="active"><a href="/services">Services</a></li>
+                      <li><a href="/contact">Contact</a></li>
+                      <li><a href="/products">Products</a></li>
+                      
                     </ul>
                   </div><!--/.nav-collapse -->
                 </div>
             </div>
-
-        <div id="countdownText">
+<div class="spacer"></div>
+<div id="clock">
+        <div id="countdownText" style="padding:100px">
                 <span class="open">Opening in</span>
                 <span class="close">Closing in</span>
         </div>
         <div id="timer"></div>
+</div>
+<div id="clock">
+  <div id="timer"></div>
+</div>
 </body>
 </html>

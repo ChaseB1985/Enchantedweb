@@ -2,6 +2,11 @@ body {
     padding-top: 50px;
   }
   
+#clock {
+padding: 50px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 30px;
+}
   #countdownText span {
     display: none;
   }
@@ -9,4 +14,8 @@ body {
   #countdownText.opened .close,
   #countdownText.closed .open {
     display: inline;
+  }
+
+  spacer {
+    padding: 100px;
   }
