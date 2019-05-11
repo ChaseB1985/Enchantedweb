@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+
+
+  <script>
+        $(document).ready(function(){
+        $(".change").on({
+
+            mouseenter: function(){
+                $(this).css("background-color", "yellow");
+                $(this).css("font-size", "24px");
+                $(this).css("color", "black");
+                $(this).css("font-family", "Vidaloka", "serif");
+                },
+            mouseleave: function(){
+                $(this).css("background-color", "black");
+                $(this).css("font-size", "24px");
+                $(this).css("color", "yellow");
+                $(this).css("font-family", "Vidaloka", "serif");
+            }  
+        });
+    });
+</script>
+</head>
+
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top change">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index">Enchanted Lighting</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="/services">Services</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/products">Products</a></li>
+              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+    </div>
+    
+<div class="spacer"></div>
+      
+      <div class="container">
+        
+        <div class="text-center">
+          <h1>Services Page</h1>
+          <br>
+          <p class="lead">Lamp Repairs: 5 Dollars<br> Lamp Wax: $3.50</p>
+        </div>
+        
+      </div><!-- /.container -->
+</body>
+
+</html>
+

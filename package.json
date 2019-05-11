@@ -1,0 +1,24 @@
+{
+  "name": "enchantedweb",
+  "version": "1.0.0",
+  "description": "site for EnchantedWeb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barriermatt7/Enchantedweb.git"
+  },
+  "author": "Matt and Chase Barrier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barriermatt7/Enchantedweb/issues"
+  },
+  "homepage": "https://github.com/Barriermatt7/Enchantedweb#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4"
+  }
+}
