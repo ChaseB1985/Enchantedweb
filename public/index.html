@@ -5,93 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/stylesheet/style.css">
     <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/stylesheet/style.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+           
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
 
-<script>
-$(function() {
-  var $timer = $('#timer');
-  var $countdownText = $('#countdownText');
-  var now = moment();
-  var openingToday = moment({
-    hour: 8
-  });
-  var closingTime = moment({
-    hour: 17
-  });
-  var openingTime = moment({
-    year: now.year(),
-    month: now.month(),
-    date: now.date() + 1,
-    hour: 8
-  });
-  if (now.diff(openingToday) < 0) {
-    $timer.countdown({
-      until: openingToday._d
-    });
-    $countdownText.addClass('closed');
-  } else if (now.diff(closingTime) < 0) {
-    $timer.countdown({
-      until: closingTime._d
-    });
-    $countdownText.addClass('opened');
-  } else {
-    $timer.countdown({
-      until: openingTime._d
-    });
-    $countdownText.addClass('closed');
-  }
-});
+    <script type="text/javascript" src="../main.js"></script>
 
-$(document).ready(function(){
-        $(".change").on({
-
-            mouseenter: function(){
-                $(this).css("background-color", "yellow");
-                $(this).css("font-size", "24px");
-                $(this).css("color", "black");
-                $(this).css("font-family", "Vidaloka", "serif");
-                },
-            mouseleave: function(){
-                $(this).css("background-color", "black");
-                $(this).css("font-size", "24px");
-                $(this).css("color", "yellow");
-                $(this).css("font-family", "Vidaloka", "serif");
-            }  
-        });
-    });
-</script>    
 </head>
+
+
 <body>
-        <div class="navbar navbar-inverse navbar-fixed-top change">
-                <div class="container">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/index">Enchanted Lighting</a>
+
+<!-- Nav Bar -->
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+              <div class="row">
+                <div class="col-3">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <!-- <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#product" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a> -->
+                      <a class="nav-link" href="/contact" role="tab" aria-selected="false">Contact</a>
+                      <a class="nav-link" href="/services" role="tab" aria-selected="false">Services</a>
+                      <a class="nav-link" href="/products" role="tab" aria-selected="true">Products</a>
+                    </div>
                   </div>
-                  <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a href="/services">Services</a></li>
-                      <li><a href="/contact">Contact</a></li>
-                      <li><a href="/products">Products</a></li>
-                      
-                    </ul>
-                  </div><!--/.nav-collapse -->
                 </div>
             </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="nav-link active" href="/index" role="tab" aria-selected="false">Enchanted Lighting</a>
+        </nav>
+      </div>
+<!-- Nav End -->
+
 <div class="spacer"></div>
+
+
 <div id="clock">
         <div id="countdownText" style="padding:100px">
                 <span class="open">Opening in</span>
@@ -99,6 +63,7 @@ $(document).ready(function(){
         </div>
         <div id="timer"></div>
 </div>
+
 
 </body>
 </html>
