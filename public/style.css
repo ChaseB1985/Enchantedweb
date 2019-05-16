@@ -1,0 +1,39 @@
+body {
+  padding-top: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+
+.my-4 {
+  margin-bottom: 1.5rem!important;
+  color: blue;
+}
+
+li {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  color: blue;
+}
+
+#clock {
+  position: relative;
+  padding: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+
+#countdownText span {
+  display: none;
+}
+
+#countdownText.opened .close, #countdownText.closed .open {
+  display: inline;
+}
+
+spacer {
+  padding: 100px;
+}
+
+.navbar {
+  background-color: #86ca17!important;
+}
