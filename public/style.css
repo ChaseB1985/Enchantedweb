@@ -4,6 +4,11 @@ body {
   font-size: 30px;
 }
 
+.my-4 {
+  margin-bottom: 1.5rem!important;
+  color: blue;
+}
+
 li {
   font-family: 'Courier New', Courier, monospace;
   font-size: 30px;
