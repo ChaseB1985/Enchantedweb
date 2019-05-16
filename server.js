@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Sets up path from assets*******************
-// app.use(express.static('assets'));
+ app.use(express.static('public'));
 
 // ================================================================================
 // ROUTER

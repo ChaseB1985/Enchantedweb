@@ -15,20 +15,22 @@ module.exports = function(app) {
   // In each of the below cases the user is shown an HTML page of content
   // ---------------------------------------------------------------------------
 
+  
+
   app.get("/products", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/products.html"));
+    res.sendFile(path.join(__dirname, "../views/products.html"));
   });
 
   app.get("/contact", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/contact.html"));
+    res.sendFile(path.join(__dirname, "../views/contact.html"));
   });
 
   app.get("/services", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/services.html"));
+    res.sendFile(path.join(__dirname, "../views/services.html"));
   });
 
   // If no matching route is found default to home
   app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    res.sendFile(path.join(__dirname, "../views/index.html"));
   });
 };
