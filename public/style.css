@@ -4,10 +4,6 @@ body {
   font-size: 30px;
 }
 
-.my-4 {
-  margin-bottom: 1.5rem!important;
-  color: blue;
-}
 
 li {
   font-family: 'Courier New', Courier, monospace;
@@ -35,5 +31,7 @@ spacer {
 }
 
 .navbar {
-  background-color: #86ca17!important;
+  background-color: rgb(121, 118, 118);
+  font-family: 'Vidaloka';
+  color: white;
 }
