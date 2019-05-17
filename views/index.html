@@ -10,51 +10,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      
      
-     <link type="text/css" rel="stylesheet" href="./public/css/style.css">
+    <link type="text/css" rel="stylesheet" href="./style.css">
+     <!-- <link type="text/css" rel="stylesheet" href=""> -->
 
-
-    <!--Removing rel='stylesheet' gets rid of the MIME type error but style sheet disappears from network tab or comes back 
-      with a 304 which means its not requesting the data again. The MIME type is some kind of routing error I have 
-      fixed before, honestly I think that is the better error because you just have to fix the pathing.
-    The link below this was when i was messing with the static route \/-->
-    <!-- <link type="text/css" href="/stylesheet/style.css"> -->
-
-
-
-
-    <!-- <script type="text/javascript" src="../assets/js/clock.js"></script>  -->
 
 </head>
 
 
 <body>
 
-<!-- Nav Bar -->
-    <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-              <div class="row">
-                <div class="col-3">
-                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                      <!-- <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#product" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a> -->
-                      <a class="nav-link" href="/contact" role="tab" aria-selected="false">Contact</a>
-                      <a class="nav-link" href="/services" role="tab" aria-selected="false">Services</a>
-                      <a class="nav-link" href="/products" role="tab" aria-selected="true">Products</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="nav-link active" href="/index" role="tab" aria-selected="false">Enchanted Lighting</a>
-        </nav>
+  <nav class="navbar navbar-expand-lg navbar-light change">
+    <a class="navbar-brand" href="/index">Enchanted Lighting</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="/contact">Contact <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="/services">Services</a>
+        <a class="nav-item nav-link" href="/products">Products</a>
       </div>
-<!-- Nav End -->
+    </div>
+  </nav>
 
 <div class="spacer"></div>
 <div>
@@ -87,5 +64,29 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
 
+<!-- <script type="text/javascript" src="../assets/js/clock.js"></script> -->
+<script language="javascript" type="text/javascript" src="../public/js/clock.js"></script>
+
+<script>
+  $(document).ready(function(){
+  $(".change").on({
+
+      mouseenter: function(){
+          $(this).css("background-color", "yellow");
+          $(this).css("font-size", "24px");
+          $(this).css("color", "black");
+          $(this).css("font-family", "Vidaloka", "serif");
+          },
+      mouseleave: function(){
+          $(this).css("background-color", "black");
+          $(this).css("font-size", "24px");
+          $(this).css("color", "yellow");
+          $(this).css("font-family", "Vidaloka", "serif");
+      }  
+  });
+});
+</script>
 </body>
+
+ 
 </html>
