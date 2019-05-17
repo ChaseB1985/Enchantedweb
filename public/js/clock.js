@@ -1,3 +1,4 @@
+
 $(function(openTimer) {
     var $timer = $('#timer');
     var $countdownText = $('#countdownText');
