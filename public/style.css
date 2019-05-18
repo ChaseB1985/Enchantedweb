@@ -1,9 +1,8 @@
 body {
-  padding-top: 50px;
-  font-family: 'Courier New', Courier, monospace;
+  color:black;
+  font-family: "Courier New", Courier, monospace;
   font-size: 30px;
 }
-
 
 li {
   font-family: 'Courier New', Courier, monospace;
@@ -31,7 +30,7 @@ spacer {
 }
 
 .navbar {
-  background-color: rgb(121, 118, 118);
-  font-family: 'Vidaloka';
-  color: white;
+  font-family: "Vidaloka";
+  color: black;
+  background-color: black;
 }
