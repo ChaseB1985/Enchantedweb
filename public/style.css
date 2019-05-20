@@ -31,7 +31,38 @@ spacer {
 }
 
 .navbar {
-  background-color: rgb(121, 118, 118);
+  /* background-color: rgb(121, 118, 118); */
   font-family: 'Vidaloka';
   color: white;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+  background-color: DodgerBlue;
+  flex-direction: row;
+    flex: 1;
+    float: right;
+}
+.box{
+  height: 100px;
+  width: 40px;
+  border: 5px;
+  border-style: solid;
+  border-color: blue;
+  background-color: pink;
+  box-sizing: border-box;
+  padding: 100px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  float: left;
+}
+.sidebar{
+  float: left;
+  width: 30%;
+  height: 100%;
+  background-color: khaki;
+  z-index: 2;
+  flex-direction: column;
+  position: absolute;
 }
