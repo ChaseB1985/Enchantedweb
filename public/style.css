@@ -1,9 +1,19 @@
 
-body { padding-top: 158px; }
+body { padding-top: 158px;
+background-color: #dddc9d;
+/* background-image:url("https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg?cs=srgb&dl=4k-wallpaper-blur-bulb-1213447.jpg&fm=jpg"); */
+/* background-image:url("/images/action-blur-bulb-355904.jpg");
+background-repeat: no-repeat;
+background-size: 100% 200%;
+background-position: initial; */
+}
 @media screen and (max-width: 768px) {
     body { padding-top: 0px; }
 }
-
+html {
+  background: url("/images/action-blur-bulb-355904.jpg") no-repeat center fixed; 
+  background-size: cover;
+}
 section {
   padding: 150px 0;
 }
@@ -28,8 +38,15 @@ spacer {
 }
 
 .navbar {
-  /* background-color: rgb(121, 118, 118); */
+  /* background-color: #dddc9d; */
   font-family: 'Vidaloka';
+  color: white;
+  
+}
+.navbar-light .navbar-brand {
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link {
   color: white;
 }
 .flex-container{
@@ -38,22 +55,29 @@ spacer {
   background-color: DodgerBlue;
   flex-direction: row;
     flex: 1;
-    float: right;
+    float: left;
 }
-.box{
-  height: 100px;
-  width: 40px;
-  border: 5px;
+/* .box{
+  height: 200px;
+  width: 150px;
+  border: 10px;
   border-style: solid;
   border-color: blue;
   background-color: pink;
   box-sizing: border-box;
-  padding: 100px;
+  padding: 50px;
   margin: 50px;
   display: flex;
   justify-content: center;
   float: left;
 }
+.featItem{
+  height: 5px;
+  width: 5px;
+  border-color: red;
+  border: 1px;
+  
+} */
 .sidebar{
   float: left;
   width: 30%;
@@ -62,4 +86,5 @@ spacer {
   z-index: 2;
   flex-direction: column;
   position: absolute;
+ flex-flow: column;
 }
