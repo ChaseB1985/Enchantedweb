@@ -24,6 +24,7 @@ app.use(bodyParser.json());
 
 // Sets up path from assets*******************
  app.use(express.static('public'));
+ app.use('/images', express.static('public'));
 
 // ================================================================================
 // ROUTER

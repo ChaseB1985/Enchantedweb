@@ -4,13 +4,16 @@
     <!--meta charset was commented out so if style sheet not loading it mat have something to do with this-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Products Page</title>
 
-    <link type="text/css" rel="stylesheet" href="../public/style.css" />
+    
 
     <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link type="text/css" rel="stylesheet" href="/style.css" />
 
   </head>
 
@@ -20,28 +23,31 @@
     <!-- Need to make sure all of the divs align- navbar seems off centered from page content-->
     
     <!--  <div class="container-fluid"> -->
-    <nav class="navbar navbar-expand-md id=navbar change">
-            <a class="navbar-brand" href="/index"> <img src="../public/images/enchlogoGRTTRANS.png" class=" d-inline-block align-top" alt="">Enchanted Lighting</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                  <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg fixed-top change">
+      <div class="container">
+            <p class="navbar-brand" href="../views/index.html">
+              <img src="../images/enchlogotransLRG.png" id="logoId" alt="Enchanted Lighting">Enchanted Lighting
+            </p>
+           <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+              </button>-->
+                  
 
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="nav navbar-nav nav-pills ml-auto">
-               
+       <div id="navButtons">
+            <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <button type="button" class="btn btn-outline-dark mr-sm-2 nav-link" href="/products">Products</button>
+                    <button type="button" class="btn btn-outline-dark mr-sm-2 nav-link" href="./views/products.html">Products</button>
                 </li>
                 
                 <li class="nav-item">
-                    <button type="button" class="btn btn-outline-dark mr-sm-2 nav-link" href="/services">Services</button>
+                    <button type="button" class="btn btn-outline-dark mr-sm-2 nav-link" href="./views/services.html">Services</button>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-outline-dark mr-sm-2 nav-link" href="/contact">Contact</button>
+                    <button type="button" class="btn btn-outline-dark mr-sm-2 nav-link" href="./views/contact.html">Contact</button>
                 </li>
             </ul>
-           </div>
-       
+          </div>
+      </div> 
     </nav>
   <!-- </div> -->
 
@@ -84,21 +90,21 @@
               <div class="carousel-item active">
                 <img
                   class="d-block img-fluid"
-                  src="../public/images/lamp3.jpg"
+                  src="../images/lamp16.jpg"
                   alt="First slide"
                   />
               </div>
               <div class="carousel-item">
                 <img
                   class="d-block img-fluid"
-                  src="../public/images/lamp9.jpg"
+                  src="../images/lamp9.jpg"
                   alt="Second slide"
                   />
               </div>
               <div class="carousel-item">
                 <img
                   class="d-block img-fluid"
-                  src="../public/images/lamp14.jpg"
+                  src="../images/lamp14.jpg"
                   alt="Third slide"
                   />
               </div>
@@ -130,8 +136,8 @@
               <div class="card h-100">
                 <a href="#"><img
                     class="card-img-top"
-                    src="../public/images/lamp13.jpg"
-                    alt=""
+                    src="../images/lamp13.jpg"
+                    alt="lamp13"
                     /></a>
                 <div class="card-body">
                   <h4 class="card-title">
@@ -155,8 +161,8 @@
               <div class="card h-100">
                 <a href="#"><img
                     class="card-img-top"
-                    src="../public/images/lamp16.jpg"
-                    alt=""
+                    src="../images/lamp16.jpg"
+                    alt="lamp16"
                     /></a>
                 <div class="card-body">
                   <h4 class="card-title">
@@ -180,7 +186,7 @@
               <div class="card h-100">
                 <a href="#"><img
                     class="card-img-top"
-                    src="../public/images/lamp19.jpg"
+                    src="../images/lamp19.jpg"
                     alt=""
                     /></a>
                 <div class="card-body">
@@ -205,7 +211,7 @@
               <div class="card h-100">
                 <a href="#"><img
                     class="card-img-top"
-                    src="../public/images/lamp21.jpg"
+                    src="../images/lamp21.jpg"
                     alt=""
                     /></a>
                 <div class="card-body">
@@ -230,7 +236,7 @@
               <div class="card h-100">
                 <a href="#"><img
                     class="card-img-top"
-                    src="../public/images/lamp15.jpg"
+                    src="../images/lamp15.jpg"
                     alt=""
                     /></a>
                 <div class="card-body">
@@ -255,7 +261,7 @@
               <div class="card h-100">
                 <a href="#"><img
                     class="card-img-top"
-                    src="../public/images/lamp14.jpg"
+                    src="../images/lamp14.jpg"
                     alt=""
                     /></a>
                 <div class="card-body">
@@ -303,7 +309,7 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
     <script>
-			$(document).ready(function() {
+		  	 $(document).ready(function() {
 				$('.change').on({
 					mouseenter: function() {
 						$(this).css('background-color', 'yellow');
@@ -318,7 +324,7 @@
 						$(this).css('font-family', 'Vidaloka', 'serif');
 					}
 				});
-			});
+			});  
 		</script>
   </body>
 </html>

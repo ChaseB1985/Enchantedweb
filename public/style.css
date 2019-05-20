@@ -1,13 +1,11 @@
-body {
-  color:black;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 30px;
+
+body { padding-top: 158px; }
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
 }
 
-li {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
-  color: blue;
+section {
+  padding: 150px 0;
 }
 
 #clock {
@@ -34,3 +32,23 @@ spacer {
   color: black;
   background-color: black;
 }
+
+.navbar-brand {
+  font-size: 27px;
+  margin-left: -3rem;
+  margin-bottom: -8px;
+}
+
+.navbar-toggler-icon {
+  color: yellow;
+}
+
+#logoId {
+  height: 120px;
+  width: 152px;
+}
+
+#navButtons {
+  margin-right: -28px;
+}
+
