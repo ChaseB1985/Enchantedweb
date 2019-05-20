@@ -8,10 +8,9 @@
     
     <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./style.css">
      
      
-    <link type="text/css" rel="stylesheet" href="/style.css">
-     <!-- <link type="text/css" rel="stylesheet" href=""> -->
 
 
 </head>
@@ -21,6 +20,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light change">
     <a class="navbar-brand" href="/index">Enchanted Lighting</a>
+    <img src="../images/enchlogotransLRG.png" id="logoId" alt="Enchanted Lighting">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,16 +34,9 @@
   </nav>
 
 <div class="spacer"></div>
-<div>
-  <ul>
-    <li>this is something</li>
-    <li>stuff is stuff</li>
-    <li>here we go</li>
-  </ul>
-</div>
 
 <div id="clock">
-        <div id="countdownText" style="padding:100px">
+        <div id="countdownText" style="padding:10px">
                 <span class="open">Opening in</span>
                 <span class="close">Closing in</span>
         </div>
@@ -51,6 +44,79 @@
 </div>
 
 
+<!-- Cards for featured items -->
+<div class="featCard flex-container">
+    <div class="row">
+        <!-- <div class="col-lg-3">
+          <div class="box">
+            <div class="featItem">
+              
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="box">
+
+          </div>
+        </div> -->
+        <div class="card-deck">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<!-- Side bar for todays information -->
+<div class="sidebar">
+    <div>
+        <ul>
+          <h1>Featured Items</h1>
+          <li>this is something</li>
+          <li>stuff is stuff</li>
+          <li>here we go</li>
+        </ul>
+      </div>
+</div>
+<!-- Info about the shop -->
+<div class="shopInfo">
+  <div class="infoBar">
+
+  </div>
+</div>
 
 
 
@@ -64,8 +130,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
 
-<!-- <script type="text/javascript" src="../assets/js/clock.js"></script> -->
-<script language="javascript" type="text/javascript" src="../public/js/clock.js"></script>
+<script type="text/javascript" src="/js/clock.js"></script>
+<!-- <script language="javascript" type="text/javascript" src="../public/js/clock.js"></script> -->
 
 <script>
   $(document).ready(function(){
