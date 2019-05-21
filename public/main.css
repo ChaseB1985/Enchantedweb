@@ -1,0 +1,64 @@
+
+body { padding-top: 158px; }
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}
+
+html {
+    background: url("../images/action-blur-bulb-355904.jpg"); 
+    background-size: cover;
+  }
+
+section {
+  padding: 150px 0;
+}
+
+#clock {
+  position: relative;
+  padding: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+
+#countdownText span {
+  display: none;
+}
+
+#countdownText.opened .close, #countdownText.closed .open {
+  display: inline;
+}
+
+spacer {
+  padding: 100px;
+}
+
+.navbar {
+  font-family: "Vidaloka";
+  color: black;
+  background-color: black;
+}
+
+.navbar-brand {
+  font-size: 27px;
+  margin-bottom: 2px;
+  margin-left: -162px;
+}
+
+.navbar-toggler-icon {
+  color: yellow;
+}
+
+.logoId {
+  height: 140px;
+  width: 419px;
+}
+
+.navButtons {
+  margin-right: -134px;
+}
+
+.silouette {
+    
+}
+
+
