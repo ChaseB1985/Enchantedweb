@@ -17,54 +17,45 @@
 
   </head>
 
-  <body>
+<body>
 
     <!-- I am working on navbar going to use a theme that looks like this https://startbootstrap.com/previews/scrolling-nav/ -->
     <!-- Need to make sure all of the divs align- navbar seems off centered from page content-->
-    
-    <!--  <div class="container-fluid"> -->
-    <nav class="navbar navbar-expand-lg fixed-top change">
-      <div class="container">
+<header>
+   
+    <nav class="navbar navbar-expand-lg change">
+      <div> 
             <a class="navbar-brand" href="/index">
-              <img src="../images/3denchlogoletter.png " class="logoId" alt="Enchanted Lighting">
+              <img src="../images/niceMDlogo.png " class="logoId" alt="Enchanted Lighting">
             </a>
            <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span> 
               </button>-->
-            
-               <div class="silouette">
-                 <a>
-                   <img src="../images/translamp2.png">
-                 </a>
-                 <a>
-                    <img src="../images/translamp.png">
-                  </a>
-                  <a>
-                      <img src="../images/transchand.png">
-                    </a>
-               </div>
-              
-             </div>     
+       </div>
+       
+        <div class="middle">
+          <a>
+            <img src="../images/navlamps.png" class="silouette" alt="Black Lamps">
+          </a>
+        </div>     
 
-              <nav class="navButtons">
-                  <div class="navbar-nav ">
-                      <a class="nav-item nav-link" href="/products">Products<span class="sr-only">(current)</span></a>
-                      <a class="nav-item nav-link" href="/services">Services</a>
-                      <a class="nav-item nav-link" href="/contact">Contact</a>
-                          
-                  </div>
-                </nav>
-      </div> 
+        <nav class="navButtons">
+          <div class="navbar-nav ">
+              <a class="nav-item nav-link" href="/products">Products<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="/services">Services</a>
+              <a class="nav-item nav-link" href="/contact">Contact</a>
+            </div>
+        </nav> 
+      <!-- </div> -->
     </nav>
-  <!-- </div> -->
-
-   
+  
+</header>
     <div class="spacer"></div>
 
     <!-- Page Content -->
 
     <!--  Added sample pictures can change to images-->
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-lg-3">
           <h1 class="my-4">Shop Name</h1>
@@ -73,9 +64,10 @@
             <a href="#" class="list-group-item">Custom Lamps</a>
             <a href="#" class="list-group-item">Other</a>
           </div>
-        </div>
+        </div> -->
         <!-- /.col-lg-3 -->
-
+<div class="main container"> 
+  <div class="container">
         <div class="col-lg-9">
           <div
             id="carouselExampleIndicators"
@@ -292,10 +284,11 @@
           <!-- /.row -->
         </div>
         <!-- /.col-lg-9 -->
-      </div>
-      <!-- /.row -->
-    </div>
-
+     <!--  </div> -->
+      <!--  /.row -->
+    <!--  </div> -->
+  </div> 
+</div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -315,24 +308,11 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    
     <script>
-		  	 $(document).ready(function() {
-				$('.change').on({
-					mouseenter: function() {
-						$(this).css('background-color', 'yellow');
-						$(this).css('font-size', '24px');
-						$(this).css('color', 'black');
-						$(this).css('font-family', 'Vidaloka', 'serif');
-					},
-					mouseleave: function() {
-						$(this).css('background-color', 'black');
-						$(this).css('font-size', '24px');
-						$(this).css('color', 'yellow');
-						$(this).css('font-family', 'Vidaloka', 'serif');
-					}
-				});
-			});  
+		  
 		</script>
+ 
   </body>
 </html>
 

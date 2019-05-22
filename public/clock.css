@@ -1,0 +1,14 @@
+#clock {
+    position: relative;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+  }
+  
+  #countdownText span {
+    display: none;
+  }
+  
+  #countdownText.opened .close, #countdownText.closed .open {
+    display: inline;
+  }
