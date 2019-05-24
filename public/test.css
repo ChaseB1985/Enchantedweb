@@ -1,0 +1,17 @@
+
+.lamps {
+   max-width: 1200px;
+  
+}
+
+.test {
+    background-image: url(../images/navlamps.png);
+    width:100%;
+    padding-bottom: 56.25%;
+    
+}
+
+#navbarNav{
+padding-right: 100px;
+}
+
