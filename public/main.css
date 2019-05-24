@@ -1,6 +1,6 @@
 
 body { padding-top: 24px; 
-  background: url("../images/action-blur-bulb-355904.jpg"); 
+  background: url("../images/newbackground.png"); 
   background-size: cover;}
 @media screen and (max-width: 768px) {
 body { padding-top: 0px; }
@@ -22,9 +22,11 @@ section {
 spacer {
   padding: 100px;
 }
+
 header {
   background-color: yellow;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+
 }
 /* .main {
 background-color: yellow;
@@ -42,6 +44,10 @@ background-color: yellow;
   
 }
 
+.navbar-expand-lg {
+  background-color: yellow;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
 
 .navbar-toggler-icon {
   color: yellow;
