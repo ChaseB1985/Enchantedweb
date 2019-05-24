@@ -19,7 +19,7 @@
 <body>
 
   <header>
-   
+    
     <nav class="navbar navbar-expand-lg change">
       <div> 
             <a class="navbar-brand" href="/index">
@@ -49,13 +49,7 @@
 </header>
 <div class="spacer"></div>
 
-<div id="clock">
-        <div id="countdownText" style="padding:10px">
-                <span class="open">Opening in</span>
-                <span class="close">Closing in</span>
-        </div>
-        <div id="timer"></div>
-</div>
+
 
 
 <!-- Cards for featured items -->
@@ -79,43 +73,12 @@
 
           </div>
         </div> -->
-        <div class="card-deck">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
+        
     </div>
 </div>
 
 <!-- Side bar for todays information -->
-<div class="sidebar">
+<!-- <div class="sidebar">
     <div>
         <ul>
           <h1>Featured Items</h1>
@@ -124,7 +87,7 @@
           <li>here we go</li>
         </ul>
       </div>
-</div>
+</div> -->
 <!-- Info about the shop -->
 <div class="shopInfo">
   <div class="infoBar">
@@ -132,6 +95,72 @@
   </div>
 </div>
 
+<!-- off canvas -->
+<div class="site-wrapper">  
+  <div class="site-canvas">    
+    
+    <nav class="site-menu" id="site-menu">
+      
+      <h2>Store News</h2>       
+      <ul>
+        <li>Sale On Baseball Lamps 50% off</li>
+        <li>Watch Baird Make a Lamp</li>
+        <li>Watch Baird eat a sandwich</li>
+      </ul>
+      
+    </nav>
+    <div class="site-content">
+    
+      <header class="header">
+        <a href="#" class="toggle-nav">&#x2261;</a>     
+        <h1>Special Store Info</h1>     
+      </header>
+      
+      <div class="content">
+        <div class="card-deck">
+          <div class="card">
+            <img src="images/lamp14.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lovers Delight</h5>
+              <p class="card-text">Buy this lamp for your lover or your wife, makes a great christmas gift.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/lamp17.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blue Bird Suprise</h5>
+              <p class="card-text">This lamp doubles as a bong.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/lamp15.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Afgan Carpet</h5>
+              <p class="card-text">Modeled after a carpet if saw when I was eating goolab-ja-moon.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">On sale for 5 more days.</small>
+            </div>
+          </div>
+        </div>
+          
+    </div>
+    <div class="close-canvas"></div>
+    <div id="clock">
+      <div id="countdownText" style="padding:10px">
+              <span class="open">We Will Be Back In</span>
+              <span class="close">Time Left to Buy a Lamp Today</span>
+      </div>
+      <div id="timer"></div>
+</div>  
+ </div>
+</div>
 
 
 
@@ -158,13 +187,36 @@
           $(this).css("font-family", "Vidaloka", "serif");
           },
       mouseleave: function(){
-          $(this).css("background-color", "black");
+          $(this).css("background-color", "grey");
           $(this).css("font-size", "24px");
           $(this).css("color", "yellow");
           $(this).css("font-family", "Vidaloka", "serif");
       }  
   });
 });
+</script>
+<script>
+(function (document, window, undefined) {
+  'use strict';  
+  
+  var toggleNav = function () {
+    if ($('.site-canvas').hasClass('site-canvas--active')) {
+      // Nav Close
+      $('.site-canvas').removeClass('site-canvas--active');
+      $('.close-canvas').removeClass('close-canvas--active');
+    } else {
+      // Nav Open
+      $('.site-canvas').addClass('site-canvas--active');
+      $('.close-canvas').addClass('close-canvas--active');
+    }
+  }
+  
+  // Toggle Nav on Click
+  $('.toggle-nav, .close-canvas').click(function() {        
+    toggleNav();
+  });
+  
+})(document, window);
 </script>
 </body>
 
