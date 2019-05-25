@@ -1,4 +1,6 @@
 
+
+
 .lamps {
    max-width: 1200px;
   
@@ -11,7 +13,21 @@
     
 }
 
-#navbarNav{
-padding-right: 100px;
+#navbarNav {
+    width: 240px;
+    padding-right: 100px;
 }
 
+.navbar-expand-lg {
+    background-color: yellow;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 18px;
+}
+
+#linkbuttons {
+    width: 100%;
+    padding-right: 191px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
