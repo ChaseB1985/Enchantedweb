@@ -8,26 +8,69 @@
 
 .test {
     background-image: url(../images/navlamps.png);
-    width:100%;
-    padding-bottom: 56.25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:99%;
+    padding-bottom: 10.25%;
     
 }
 
 #navbarNav {
-    width: 240px;
-    padding-right: 100px;
+    width: 100%;
+   font-size: 30px;
 }
 
 .navbar-expand-lg {
     background-color: yellow;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     margin-top: 18px;
+    padding: 2px;
 }
 
 #linkbuttons {
     width: 100%;
-    padding-right: 191px;
+    
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
+
+.container-fluid {
+    width: 64%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-link {
+    color: black;
+}
+
+#slider {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+
+/* helper css, since we don't have images */
+.slide1 {background: red;}
+.slide2 {background: blue;}
+.slide3 {background: green;}
+.slide4 {background: purple;}
+.slide5 {background: pink;}
