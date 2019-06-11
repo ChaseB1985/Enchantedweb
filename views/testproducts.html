@@ -1,84 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!--meta charset was commented out so if style sheet not loading it mat have something to do with this-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="./style.css">
+
+    <title>Products Page</title>
 
 
 
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="/style.css" />
 
-</head>
 
+
+    <!--Scripts for slider.js on and nav color change-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/colorchange.js"></script>
+
+
+  </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-                 <a class="navbar-brand" href="/index">
-                   <img src="../images/niceMDlogo.png " class="logoId" alt="Enchanted Lighting">
-                 </a>
-                <div id="linkbuttons" class="container-fluid">
-                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-                 </button>
-                 <div class="collapse navbar-collapse" id="navbarNav">
-                   <ul class="nav navbar-nav buttons">
-                     <li class="nav-item active">
-                       <a class="nav-item nav-link" href="/products">Products<span class="sr-only">(current)</span></a>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-item nav-link" href="/services">Services</a>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-item nav-link" href="/contact">Contact</a>
-                     </li>
-                   </ul>
-                 </div>
-               </div>
- </div>
+<!--"change" is the jquery code used to change the nav bar color-->
+ <nav class="navbar navbar-expand-lg change">
+   <div class="container-fluid logobuttons">
+      <a class="navbar-brand" href="/index">
+        <img src="../images/niceMDlogo.png " class="logoId" alt="Enchanted Lighting">
+      </a>
+      <div id="linkbuttons" class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav buttons">
+              <li class="nav-item active">
+                <a class="nav-item nav-link" href="/products">Products<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link" href="/services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link" href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+</div>
+
+  <!--  Silouette contains the attribute for the black lamps in the Navbar -->
+  <div class="silouette"></div>
+</nav>
+
+<div class="spacer"></div>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <h1 class="display-4">What We Do/Store Info</h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum culpa inventore, eaque accusamus error sed? Cupiditate atque quisquam aliquam aspernatur,
+                  explicabo quas earum quis quaerat natus. Id reprehenderit sequi aliquid.</p>
+
+            </div>
+            <div class="col-md-6">
+                <img src="/images/randy.jpg" />
+            </div>
+        </div>
+      </div>
+</div>
 
 
 
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
 
 
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
 
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+</script>
 
-
-    <script>
-          $(document).ready(function(){
-          $(".change").on({
-
-              mouseenter: function(){
-                  $(this).css("background-color", "yellow");
-                  $(this).css("font-size", "24px");
-                  $(this).css("color", "black");
-                  $(this).css("font-family", "Vidaloka", "serif");
-                  },
-              mouseleave: function(){
-                  $(this).css("background-color", "black");
-                  $(this).css("font-size", "24px");
-                  $(this).css("color", "yellow");
-                  $(this).css("font-family", "Vidaloka", "serif");
-              }
-          });
-      });
-  </script>
-</body>
-
+  </body>
 </html>
-
-
-
-

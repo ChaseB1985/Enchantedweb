@@ -13,4 +13,4 @@ $(document).ready(function() {
             $(this).css('font-family', 'Vidaloka', 'serif');
         }
     });
-});  
+});

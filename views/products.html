@@ -8,77 +8,110 @@
 
     <title>Products Page</title>
 
-
-
     <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link type="text/css" rel="stylesheet" href="/style.css" />
-
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/products.css" />
 
     <!--Scripts for slider.js on and nav color change-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script type="text/javascript" src="/js/colorchange.js"></script>
 
-
   </head>
+  <body>
 
-<body>
+  <div class="jumbotron prodtron change">
+    <div class="container text-center">
+        <a href="/index"><img src="../images/niceMDlogo.png " class="logoId" alt="Enchanted Lighting">
+        </a>
+      <p>Highland Park, TX</p>
+    </div>
+  </div>
 
-<!--"change" is the jquery code used to change the nav bar color-->
- <nav class="navbar navbar-expand-lg change">
-   <div class="container-fluid logobuttons">
-      <a class="navbar-brand" href="/index">
-        <img src="../images/niceMDlogo.png " class="logoId" alt="Enchanted Lighting">
-      </a>
-      <div id="linkbuttons" class="container-fluid">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav navbar-nav buttons">
-              <li class="nav-item active">
-                <a class="nav-item nav-link" href="/products">Products<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-item nav-link" href="/services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-item nav-link" href="/contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+        <a class="navbar-brand" href="/index">Enchanted Lighting</a>
       </div>
-</div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/index">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!--  Silouette contains the attribute for the black lamps in the Navbar -->
-  <div class="silouette"></div>
-</nav>
-
-<div class="spacer"></div>
-
-<div class="jumbotron">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-
-                <h1 class="display-4">What We Do/Store Info</h1>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum culpa inventore, eaque accusamus error sed? Cupiditate atque quisquam aliquam aspernatur,
-                  explicabo quas earum quis quaerat natus. Id reprehenderit sequi aliquid.</p>
-
-            </div>
-            <div class="col-md-6">
-                <img src="/images/randy.jpg" />
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Gold Statue Lamp</div>
+          <div class="panel-body"><img src="/images/lamp4.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">Solid Colorado Gold</div>
         </div>
       </div>
-</div>
+      <div class="col-md-4">
+        <div class="panel panel-danger">
+          <div class="panel-heading">Another Solid Gold Lamp</div>
+          <div class="panel-body"><img src="/images/lamp11.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">Has Hidden Bong function</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-success">
+          <div class="panel-heading">Dino Egg Lamp</div>
+          <div class="panel-body"><img src="/images/lamp12.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">Cross Section of baby Trisaratops egg</div>
+        </div>
+      </div>
+    </div>
+  </div><br>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">3000 year old China Lamps</div>
+          <div class="panel-body"><img src="/images/lamp15.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">Stolen from the Berlin museum of art and turned into a lamp by Randy to disguise its origin</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Rare Baby Sea turtle egg light Bulbs</div>
+          <div class="panel-body"><img src="/images/lamp16.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">Personally collected by Randy and the painstakenly hand painted by Baird</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Santa Annas Alamo Lantern</div>
+          <div class="panel-body"><img src="/images/lamp22.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">Hand Crafted by Randy</div>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
 
+  <footer class="container-fluid text-center">
+    <p>Online Store Copyright</p>
+    <form class="form-inline">Get deals:
+      <input type="email" class="form-control" size="50" placeholder="Email Address">
+      <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+  </footer>
 
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>

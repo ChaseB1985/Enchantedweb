@@ -3,8 +3,8 @@
 $(function() {
 
     //settings for slider
-    var width = 720;
-    var animationSpeed = 1000;
+    var width = $('img').width();
+    var animationSpeed = 500;
     var pause = 3000;
     var currentSlide = 1;
 
