@@ -1,6 +1,6 @@
 
 body { padding-top: 158px;
-background-color: #dddc9d;
+background-color:#322B29;
 /* background-image:url("https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg?cs=srgb&dl=4k-wallpaper-blur-bulb-1213447.jpg&fm=jpg"); */
 /* background-image:url("/images/action-blur-bulb-355904.jpg");
 background-repeat: no-repeat;
@@ -43,15 +43,15 @@ spacer {
 .navbar {
   /* background-color: #dddc9d; */
   font-family: 'Vidaloka';
-  color: white;
-  
+
+
 }
-.navbar-light .navbar-brand {
+/* .navbar-light .navbar-brand {
   color: white;
 }
 .navbar-light .navbar-nav .nav-link {
   color: white;
-}
+} */
 .flex-container{
   display: flex;
   justify-content: center;
@@ -60,14 +60,14 @@ spacer {
     flex: 1;
     float: left;
 }
-/* 
+/*
 }
 .featItem{
   height: 5px;
   width: 5px;
   border-color: red;
   border: 1px;
-  
+
 } */
 .sidebar{
   float: left;
@@ -83,33 +83,33 @@ spacer {
 .site-wrapper {
   height: 300px; /* Temp */
   overflow: hidden;
-  position: relative;  
+  position: relative;
   width: 100%;
 }
 
-.site-canvas {  
+.site-canvas {
   height: 100%;
   position: relative;
   width: 100%;
-  
+
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
-  
+
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  
+
   -webkit-transition: 300ms ease all;
   -moz-transition: 300ms ease all;
   -ms-transition: 300ms ease all;
   -o-transition: 300ms ease all;
   transition: 300ms ease all;
-  
+
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -123,7 +123,7 @@ spacer {
   -ms-transform: translateX(300px);
   -o-transform: translateX(300px);
   transform: translateX(300px);
-  
+
   -webkit-transform: translate3d(300px, 0, 0);
   -moz-transform: translate3d(300px, 0, 0);
   -ms-transform: translate3d(300px, 0, 0);
@@ -133,15 +133,15 @@ spacer {
 
 .site-menu {
   background: rgb(241, 241, 61);
-  color: White;  
+  color: White;
   height: 100%;
   left: -300px;
   padding: 15px;
   position: absolute;
-  top: 0;      
+  top: 0;
   width: 300px;
   animation: blink;
-  
+
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -155,7 +155,7 @@ spacer {
 
 .close-canvas {
   background-color: transparent;
-  bottom: 0;  
+  bottom: 0;
   cursor: pointer;
   display: none;
   height: 100%;
@@ -196,12 +196,10 @@ body {
 }
 
 h1 {
-  color: White;
   margin: 0;
   padding-left: 1em;
 }
-h2{
-  color:white; 
+h2 {
   margin-top: 50px;
 }
 
@@ -209,44 +207,55 @@ h2{
   padding: 15px;
 }
 
-
 .lamps {
   max-width: 1200px;
- 
 }
 
-.test {
-   background-image: url(../images/navlamps.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   width:99%;
-   padding-bottom: 10.25%;
-   margin: 1%;
-   
+/*controls lamps in navbar */
+.silouette {
+  background-image: url(../images/navlamps.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 119%;
+  height: 108%;
+  padding-bottom: 9%;
+  padding-top: 2%;
+  margin-bottom: -1%;
+  margin-top: 0%;
 }
-
+/*Controls font size for navbar buttons */
 #navbarNav {
    width: 100%;
   font-size: 30px;
+  font-weight: 900;
 }
 
+/* controls navbar */
 .navbar-expand-lg {
-   background-color: yellow;
-   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-   margin-top: 18px;
-   padding: 2px;
+background-color: yellow;
+box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+margin-top: 35px;
+margin-bottom: 88px;
+padding-bottom: 13px;
 }
-
+/*controls spacing for link buttons */
 #linkbuttons {
    width: 100%;
-   
    padding-left: 15px;
    margin-right: auto;
    margin-left: auto;
 }
+/* controls logo */
+.logoId {
+  height: 174px;
+  width: 382px;
+  margin-bottom: 7%;
+  margin-top: 6%;
+}
 
-.container-fluid {
-   width: 64%;
+/* controls logo and link buttons */
+.container-fluid.logobuttons {
+   width: 52%;
    padding-right: 15px;
    padding-left: 15px;
    margin-right: auto;
@@ -256,7 +265,7 @@ h2{
 .nav-link {
    color: black;
 }
-
+/* slider css */
 #slider {
    width: 720px;
    height: 400px;
@@ -279,7 +288,9 @@ h2{
 }
 
 /* helper css, since we don't have images */
-.slide1 {background: red;}
+.slide1 {
+  background-image: url(../images/navlamp15.jpg);
+}
 .slide2 {background: blue;}
 .slide3 {background: green;}
 .slide4 {background: purple;}
@@ -302,4 +313,18 @@ h2{
 #map {
   margin: 100px;
   padding: 100px;
+}
+
+.jumbotron {
+
+  margin: 8rem;
+  /* background-color: #e9ecef; */
+  border-radius: .3rem;
+}
+
+
+
+.Jlights {
+  max-height: 40%;
+  width: 100%;
 }
