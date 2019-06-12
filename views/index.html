@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/products.css" />
 
-     <!--Scripts for slider.js -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-     <script type="text/javascript" src="/js/colorchange.js"></script>
+    <!--Scripts for slider.js on and nav color change-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/colorchange.js"></script>
      <script type="text/javascript" src="/js/slider.js"></script>
 
 </head>
@@ -22,35 +22,38 @@
 
   <!--"change" is the jquery code used to change the nav bar color-->
 
-  <nav class="navbar navbar-expand-lg change">
-    <div class="container-fluid logobuttons">
-                 <a class="navbar-brand" href="/index">
-                   <img src="../images/niceMDlogo.png " class="logoId" alt="Enchanted Lighting">
-                 </a>
-                <div id="linkbuttons" class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                 <div class="collapse navbar-collapse" id="navbarNav">
-                   <ul class="nav navbar-nav buttons">
-                     <li class="nav-item active">
-                       <a class="nav-item nav-link" href="/products">Products<span class="sr-only">(current)</span></a>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-item nav-link" href="/services">Services</a>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-item nav-link" href="/contact">Contact</a>
-                     </li>
-                   </ul>
-                 </div>
-               </div>
-            </div>
-
-  <div class="silouette">
-    <!--  Silouette contains the attribute for the black lamps in the Navbar -->
+  <div class="jumbotron prodtron change">
+    <div class="container text-center">
+        <a href="/index"><img src="../images/niceMDlogo.png " class="logoId" alt="Enchanted Lighting">
+        </a>
+      <p>Highland Park, TX</p>
+    </div>
   </div>
-</nav>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index">Enchanted Lighting</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/index">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 <!-- 1. Jquery slider showing different lamps -->
 <!-- 2. 1 row 2 columns 1 column with products/lines of lamps he carries- 1 column with services/customs lamps-repair etc. and video of lamp being made?  -->
@@ -69,12 +72,18 @@
       </ul>
   </div>
 
+  <footer class="container-fluid text-center">
+    <p>Online Store Copyright</p>
+    <form class="form-inline">Get deals:
+      <input type="email" class="form-control" size="50" placeholder="Email Address">
+      <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+  </footer>
 
 
 
 
-
-<footer>
+<!-- <footer>
   <div id="clock">
     <div id="countdownText" style="padding:10px">
             <span class="open">We Will Be Back In</span>
@@ -82,15 +91,12 @@
     </div>
     <div id="timer"></div>
   </div>
-</footer>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</footer> -->
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
 
 <script type="text/javascript" src="/js/clock.js"></script>

@@ -28,23 +28,23 @@ body {
   }
 
 .container.text-center {
-    border-style: solid;
-    border-color: darkorange;
-    background-color: yellow;
-    box-shadow: 7px 12px 13px 14px rgba(40, 85, 57, 0.5);
-    width: 21%;
-    margin: 0% 0% -1% 36%;
-    padding-left: 0%;
-    padding-right: 0%;
-    border-radius: 83px;
-    border-width: 6px;
+  border-style: solid;
+  border-color: darkorange;
+  background-color: yellow;
+  box-shadow: 7px 12px 13px 14px rgba(12, 62, 23, 0.5);
+  width: 34%;
+  margin: -1% 1% -1% 40%;
+  padding-left: 0%;
+  padding-right: 0%;
+  border-radius: 83px;
+  border-width: 6px;
 }
 
 .logoId {
-    height: 55%;
-    width: 68%;
-    margin-top: 4%;
-    margin-bottom: 1%;
+  height: 55%;
+  width: 76%;
+  margin-top: 4%;
+  margin-bottom: 1%;
 }
   /* Add a gray background color and some padding to the footer */
   footer {
