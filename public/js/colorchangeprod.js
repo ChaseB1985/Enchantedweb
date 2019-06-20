@@ -3,11 +3,11 @@ $(document).ready(function() {
         mouseenter: function() {
             $(this).css('background-color', 'yellow');
             $(this).css('font-size', '24px');
-            $(this).css('color', 'black');
+            $(this).css('color', 'grey');
             $(this).css('font-family', 'Vidaloka', 'serif');
         },
         mouseleave: function() {
-            $(this).css('background-color', 'black');
+            $(this).css('background-color', 'grey');
             $(this).css('font-size', '24px');
             $(this).css('color', 'yellow');
             $(this).css('font-family', 'Vidaloka', 'serif');

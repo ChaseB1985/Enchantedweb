@@ -2,7 +2,7 @@ body {
     /* padding: 26px 50px; */
     background: url(https://image.freepik.com/free-photo/old-brick-wall-textures-background_74190-1958.jpg);
     /*background-image: url(/images/greytextbackgrdwallpaper.jpg); */
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 140%;
     background-position: initial;
   }
@@ -15,12 +15,14 @@ body {
 
   /* Remove the jumbotron's default bottom margin */
    .jumbotron {
-    margin-bottom: 0;
-    background-color: black;
+    margin-bottom: 30px;
+    background-color:rgb(110, 110, 110);
+   
   }
 
   .jumbotron .container {
-    max-width: 18%;
+    max-width: 100%;
+    
 }
 
   .jumbotron.prodtron {
@@ -50,7 +52,16 @@ body {
   footer {
     background-color: #f2f2f2;
     padding: 25px;
+    margin-top: 50px;
+    
+    height: 100px;
+    position: relative;
+    width: 100%;
   }
+  #foot{
+    top: 800px;
+  }
+
 /* Controls prod page prod columns */
   .col-md-4 {
     position: relative;
@@ -58,7 +69,24 @@ body {
     padding-right: 50px;
     padding-left: 45px;
 }
+#clock {
+  position: relative;
+  padding: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-weight: 900;
+}
 
+#countdownText span {
+  display: none;
+}
+
+#countdownText.opened .close, #countdownText.closed .open {
+  display: inline;
+}
+h2{
+  text-align: center;
+}
   /*controls lamps in navbar */
 /* .silouette {
     background-image: url(../images/navlamps.png);

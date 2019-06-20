@@ -42,10 +42,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/index">Home</a></li>
+        <li><a href="/index">Home</a></li>
         <li><a href="/products">Products</a></li>
         <li><a href="/services">Services</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li class="active"><a href="/contact">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
@@ -82,33 +82,54 @@
             </div>
           </div>
     </div>
+
     <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                  <img src="/images/randy.jpg" />
+              </div>
+                <div class="col-md-6">
+
+                    <h1 class="display-4">About Randy</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatum culpa inventore, eaque accusamus error sed? Cupiditate atque quisquam aliquam aspernatur,
+                      explicabo quas earum quis quaerat natus. Id reprehenderit sequi aliquid.</p>
+
+                </div>
+            </div>
+          </div>
+    </div>
+    
+    <!-- <div class="jumbotron">
         <h1 class="display-4">About Randy</h1>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum culpa inventore, eaque accusamus error sed? Cupiditate atque quisquam aliquam aspernatur, explicabo quas earum quis quaerat natus. Id reprehenderit sequi aliquid.</p>
-        <hr class="my-4">
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Voluptatum culpa inventore, eaque accusamus error sed? Cupiditate atque quisquam 
+          aliquam aspernatur, explicabo quas earum quis quaerat natus. Id reprehenderit sequi aliquid.</p>
+         <hr class="my-4"> 
+        <img src="/images/randy.jpg" />
 
         <div class="col-md-6">
-            <img src="/images/randy.jpg" />
         </div>
-      </div>
+      </div> -->
 
 
       <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
       <!-- <div class="map"> -->
         <div class="mapouter">
           <div class="gmap_canvas">
-              <iframe width="1600" height="900" id="gmap_canvas" src="https://maps.google.com/maps?q=6909%20Preston%20Road%20University%20Park%2C%20TX%2075205%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              <iframe width="800" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=6909%20Preston%20Road%20University%20Park%2C%20TX%2075205%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0" scrolling="no" marginheight="0" marginwidth="0" margin="100px">
-            </iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+            </iframe>
           </div>
           <style>
           .mapouter{position:relative;text-align:right;height:500px;width:600px;}
-          .gmap_canvas {overflow:hidden;background:none!important;height:1000px;width:1600px;margin:100px}
+          .gmap_canvas {overflow:hidden;background:none!important;height:600px;width:800px;margin:100px}
           </style>
         </div>
       </div>
 
-      <footer class="container-fluid text-center">
+      <footer class="container-fluid text-center sticky-bottom" id="foot">
         <p>Online Store Copyright</p>
         <form class="form-inline">Get deals:
           <input type="email" class="form-control" size="50" placeholder="Email Address">
@@ -117,7 +138,7 @@
       </footer>
 
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
 

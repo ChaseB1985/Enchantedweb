@@ -3,7 +3,7 @@ body {
   padding: 26px 50px;
   background: url(https://image.freepik.com/free-photo/dark-grunge-texture_1048-4055.jpg?1);
   /*background-image: url(/images/greytextbackgrdwallpaper.jpg); */
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 100%;
   background-position: initial;
 }
@@ -174,7 +174,7 @@ spacer {
 /* Extra... */
 
 .header {
-  background-color: Black;
+  background-color: rgb(201, 201, 199);
   padding: 15px;
   position: relative;
 }
