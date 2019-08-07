@@ -1,129 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--meta charset was commented out so if style sheet not loading it mat have something to do with this-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Products Page</title>
+<head>
+  <!--meta charset was commented out so if style sheet not loading it mat have something to do with this-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="/products.css" />
+  <title>Products Page</title>
 
-    <!--Scripts for slider.js on and nav color change-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/colorchange.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- <link type="text/css" rel="stylesheet" href="/products.css" /> -->
+  <link type="text/css" rel="stylesheet" href="/styles.css" />
 
-  </head>
-  <body>
+  <!--Scripts for slider.js on and nav color change-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/colorchange.js"></script>
 
-  <div class="jumbotron prodtron change">
-    <div class="container text-center">
-        <a href="/index"><img src="../images/niceMDlogo.png " class="logoId" alt="Enchanted Lighting">
-        </a>
-      <p>Highland Park, TX</p>
-    </div>
-  </div>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/12bc9e4a83.js"></script>
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/index">Enchanted Lighting</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="/index">Home</a></li>
-          <li class="active"><a href="/products">Products</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-        </ul>
+
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar">
+    <div class="navbar-center">
+      <span class="nav-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <img src="/images/logo.svg" alt="store logo">
+      <div class="cart-btn">
+        <span class="nav-icon">
+          <i class="fas fa-cart-plus"></i>
+        </span>
+        <div class="cart-items">0</div>
       </div>
     </div>
   </nav>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Gold Statue Lamp</div>
-          <div class="panel-body"><img src="/images/lamp4.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-          <div class="panel-footer">Solid Colorado Gold</div>
+  <!-- end of Nav bar -->
+  <!-- hero -->
+  <header class="hero">
+    <div class="banner">
+      <h1 class="banner-title">furniture collection</h1>
+      <button class="banner-btn">shop now</button>
+    </div>
+  </header>
+  <!-- end of hero -->
+  <!-- products -->
+  <section class="products">
+    <div class="section-title">
+      <h2>our products</h2>
+    </div>
+    <div class="products-center">
+      <!-- single products -->
+      <!-- <article class="product">
+        <div class="img-container">
+          <img src="/images/lamp22.jpg" alt="lamp" class="product-img">
+          <button class="bag-btn" data-id="1">
+            <i class="fas fa-shopping-cart">add to bag</i>
+          </button>
         </div>
+        <h3>queen bed</h3>
+        <h4>$16</h4>
+      </article> -->
+      <!-- single products end of -->
+    </div>
+  </section>
+  <!-- end of products -->
+  <!-- cart -->
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fas fa-window-close"></i>
+      </span>
+      <h2>your cart</h2>
+      <div class="cart-content">
+        <!-- cart item -->
+        <!-- <div class="cart-item">
+          
+        </div> -->
+        <!-- end of cart item -->
       </div>
-      <div class="col-md-4">
-        <div class="panel panel-danger">
-          <div class="panel-heading">Another Solid Gold Lamp</div>
-          <div class="panel-body"><img src="/images/lamp11.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-          <div class="panel-footer">Has Hidden Bong function</div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="panel panel-success">
-          <div class="panel-heading">Dino Egg Lamp</div>
-          <div class="panel-body"><img src="/images/lamp12.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-          <div class="panel-footer">Cross Section of baby Trisaratops egg</div>
-        </div>
+      <div class="cart-footer">
+        <h3>your total: $ <span class="cart-total">0
+          </span> </h3>
+        <button class="clear-cart banner-btn">clear cart</button>
       </div>
     </div>
-  </div><br>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="panel panel-primary">
-          <div class="panel-heading">3000 year old China Lamps</div>
-          <div class="panel-body"><img src="/images/lamp15.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-          <div class="panel-footer">Stolen from the Berlin museum of art and turned into a lamp by Randy to disguise its origin</div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Rare Baby Sea turtle egg light Bulbs</div>
-          <div class="panel-body"><img src="/images/lamp16.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-          <div class="panel-footer">Personally collected by Randy and the painstakenly hand painted by Baird</div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Santa Annas Alamo Lantern</div>
-          <div class="panel-body"><img src="/images/lamp22.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-          <div class="panel-footer">Hand Crafted by Randy</div>
-        </div>
-      </div>
-    </div>
-  </div><br><br>
-
-  <footer class="container-fluid text-center">
-    <p>Online Store Copyright</p>
-    <form class="form-inline">Get deals:
-      <input type="email" class="form-control" size="50" placeholder="Email Address">
-      <button type="button" class="btn btn-danger">Sign Up</button>
-    </form>
-  </footer>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+  </div>
+  <!-- end of cart -->
+  <!-- add contentful link here later  -->
+  <script type="text/javascript" src="/js/app.js"></script>
 
 
 
-<script>
+</body>
 
-
-</script>
-
-  </body>
 </html>
-
