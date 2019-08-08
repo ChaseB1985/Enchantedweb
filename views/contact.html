@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Contact Page</title>
+  <title>Contact Page</title>
 
-     <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="/products.css" />
+  <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="/styles.css" />
 
-    <!--Scripts for slider.js on and nav color change-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/colorchange.js"></script>
+  <!--Scripts for slider.js on and nav color change-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/colorchange.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/12bc9e4a83.js"></script>
 
 
 </head>
@@ -21,87 +24,95 @@
 
 <body>
 
- <!--"change" is the jquery code used to change the nav bar color-->
- <div class="jumbotron prodtron change">
-  <div class="container text-center">
+  <!--"change" is the jquery code used to change the nav bar color-->
+  <div class="jumbotron prodtron change">
+    <div class="container text-center">
       <a href="/index"><img src="../images/niceMDlogo.png " class="logoId" alt="Enchanted Lighting">
       </a>
-    <p>Highland Park, TX</p>
-  </div>
-</div>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/index">Enchanted Lighting</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="/index">Home</a></li>
-        <li><a href="/products">Products</a></li>
-        <li><a href="/services">Services</a></li>
-        <li class="active"><a href="/contact">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-      </ul>
+      <p>Highland Park, TX</p>
     </div>
   </div>
-</nav>
+  <!-- Nav bar -->
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-center">
+      <span class="nav-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index">Enchanted Lighting</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="/index">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/services">Services</a></li>
+          <li class="active"><a href="/contact">Contact</a></li>
+        </ul>
 
-      <div class="container">
+      </div>
+      <!-- <img src="/images/logo.svg" alt="store logo"> -->
+      <div class="">
+        <span class="nav-icon">
+          <i class="fas fa-bezier-curve"></i>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <!-- end of Nav bar -->
 
-        <div class="text-center">
-          <h2>Contact Page</h2>
-          <br>
-          <p class="lead">We are open at 8AM <br> We are located at 123 Fake street</p>
+
+  <div class="container">
+
+    <div class="text-center">
+      <h2>Contact Page</h2>
+      <br>
+      <p class="lead">We are open at 8AM <br> We are located at 123 Fake street</p>
+    </div>
+
+  </div><!-- /.container -->
+
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+
+          <h1 class="display-4">What We Do/Store Info</h1>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum culpa inventore, eaque accusamus error sed? Cupiditate atque quisquam aliquam aspernatur,
+            explicabo quas earum quis quaerat natus. Id reprehenderit sequi aliquid.</p>
+
         </div>
-
-      </div><!-- /.container -->
-
-      <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-
-                    <h1 class="display-4">What We Do/Store Info</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatum culpa inventore, eaque accusamus error sed? Cupiditate atque quisquam aliquam aspernatur,
-                      explicabo quas earum quis quaerat natus. Id reprehenderit sequi aliquid.</p>
-
-                </div>
-                <div class="col-md-6">
-                    <img src="/images/randy.jpg" />
-                </div>
-            </div>
-          </div>
+        <div class="col-md-6">
+          <img src="/images/randy.jpg" />
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                  <img src="/images/randy.jpg" />
-              </div>
-                <div class="col-md-6">
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/images/randy.jpg" />
+        </div>
+        <div class="col-md-6">
 
-                    <h1 class="display-4">About Randy</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatum culpa inventore, eaque accusamus error sed? Cupiditate atque quisquam aliquam aspernatur,
-                      explicabo quas earum quis quaerat natus. Id reprehenderit sequi aliquid.</p>
+          <h1 class="display-4">About Randy</h1>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum culpa inventore, eaque accusamus error sed? Cupiditate atque quisquam aliquam aspernatur,
+            explicabo quas earum quis quaerat natus. Id reprehenderit sequi aliquid.</p>
 
-                </div>
-            </div>
-          </div>
+        </div>
+      </div>
     </div>
-    
-    <!-- <div class="jumbotron">
+  </div>
+
+  <!-- <div class="jumbotron">
         <h1 class="display-4">About Randy</h1>
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Voluptatum culpa inventore, eaque accusamus error sed? Cupiditate atque quisquam 
@@ -114,36 +125,48 @@
       </div> -->
 
 
-      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-      <!-- <div class="map"> -->
-        <div class="mapouter">
-          <div class="gmap_canvas">
-              <iframe width="800" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=6909%20Preston%20Road%20University%20Park%2C%20TX%2075205%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0" scrolling="no" marginheight="0" marginwidth="0" margin="100px">
-            </iframe>
-          </div>
-          <style>
-          .mapouter{position:relative;text-align:right;height:500px;width:600px;}
-          .gmap_canvas {overflow:hidden;background:none!important;height:600px;width:800px;margin:100px}
-          </style>
-        </div>
+  <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+    <!-- <div class="map"> -->
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe width="800" height="600" id="gmap_canvas"
+          src="https://maps.google.com/maps?q=6909%20Preston%20Road%20University%20Park%2C%20TX%2075205%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0" margin="100px">
+        </iframe>
       </div>
+      <style>
+        .mapouter {
+          position: relative;
+          text-align: right;
+          height: 500px;
+          width: 600px;
+        }
 
-      <footer class="container-fluid text-center sticky-bottom" id="foot">
-        <p>Online Store Copyright</p>
-        <form class="form-inline">Get deals:
-          <input type="email" class="form-control" size="50" placeholder="Email Address">
-          <button type="button" class="btn btn-danger">Sign Up</button>
-        </form>
-      </footer>
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          height: 600px;
+          width: 800px;
+          margin: 100px
+        }
+      </style>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center sticky-bottom" id="foot">
+    <p>Online Store Copyright</p>
+    <form class="form-inline">Get deals:
+      <input type="email" class="form-control" size="50" placeholder="Email Address">
+      <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+  </footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
 
 
 </body>
 
 </html>
-
