@@ -4,7 +4,7 @@
                 "id": "1"
             },
             "fields": {
-                "title": "queen panel bed",
+                "title": "White Pin Lamp",
                 "price": 10.99,
                 "image": {
                     "fields": {
@@ -20,7 +20,7 @@
                 "id": "2"
             },
             "fields": {
-                "title": "king panel bed",
+                "title": "Lantern Lamp",
                 "price": 1.99,
                 "image": {
                     "fields": {
@@ -36,7 +36,7 @@
                 "id": "3"
             },
             "fields": {
-                "title": "single panel bed",
+                "title": "Golden Ladies Lamps",
                 "price": 12.99,
                 "image": {
                     "fields": {
@@ -52,7 +52,7 @@
                 "id": "4"
             },
             "fields": {
-                "title": "twin panel bed",
+                "title": "Mineral Lamps",
                 "price": 22.99,
                 "image": {
                     "fields": {
@@ -68,12 +68,12 @@
                 "id": "5"
             },
             "fields": {
-                "title": "fridge",
+                "title": "Suprise Lamp",
                 "price": 88.99,
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "/images/lamp5.jpg"
+                            "url": "/images/lamp15.jpg"
                         }
                     }
                 }
@@ -84,7 +84,7 @@
                 "id": "6"
             },
             "fields": {
-                "title": "dresser",
+                "title": "Oriental Lamp",
                 "price": 32.99,
                 "image": {
                     "fields": {
@@ -100,7 +100,7 @@
                 "id": "7"
             },
             "fields": {
-                "title": "couch",
+                "title": "Blue Drop Lamp",
                 "price": 45.99,
                 "image": {
                     "fields": {
@@ -116,7 +116,7 @@
                 "id": "8"
             },
             "fields": {
-                "title": "table",
+                "title": "Flower Lamp",
                 "price": 33.99,
                 "image": {
                     "fields": {

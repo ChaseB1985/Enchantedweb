@@ -9,6 +9,7 @@ const cartItems = document.querySelector(".cart-items");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products-center");
+const bannerBtn = document.querySelector(".banner-btn");
 
 // cart 
 let cart = [];
@@ -92,7 +93,7 @@ class UI {
 
                 // add product to the cart
                 cart = [...cart, cartItem];
-                console.log(cart);
+
                 // save cart in local storage
                 Storage.saveCart(cart);
                 // set cart values
@@ -136,12 +137,14 @@ class UI {
     showCart() {
         cartOverLay.classList.add('transparentBcg');
         cartDOM.classList.add('showCart');
+        // bannerBtn.classList.add('showCart');
     }
     setupAPP() {
         cart = Storage.getCart();
         this.setCartValues(cart);
         this.populateCart(cart);
         cartBtn.addEventListener('click', this.showCart);
+        bannerBtn.addEventListener('click', this.showCart);
         closeCartBtn.addEventListener('click', this.hideCart)
     }
     populateCart(cart) {
