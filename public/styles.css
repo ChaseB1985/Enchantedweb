@@ -25,7 +25,7 @@ body {
 /* --------------- Navbar ---------------- */
 .navbar {
     position: sticky;
-    top: 0;
+    margin-top: -30px;
     height: 60px;
     width: 100%;
     display: flex;
@@ -50,9 +50,10 @@ body {
     font-size: 35px;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
+    /* background-clip: text;
     color: transparent;
-    text-shadow: rgb(232, 232, 7) 3px -6px 3px;
+    text-shadow: rgb(232, 232, 7) 3px -6px 3px; */
+    text-align: left;
 }
 
 .nav-icon {
@@ -320,15 +321,10 @@ body {
 }
 
 
-/* .navbar {
-    margin-bottom: 50px;
-    border-radius: 0;
-} */
-
-/* Remove the jumbotron's default bottom margin */
+/* Enchanted Top Jumbo */
 .jumbotron {
     margin-bottom: 30px;
-    background-color: var(--mainGrey);
+    background-color: #0a0a0a;
 
 }
 
@@ -361,7 +357,8 @@ body {
     margin-bottom: 1%;
 }
 
-/* Add a gray background color and some padding to the footer */
+/* End Top Jumbo */
+/* Footer beginning */
 footer {
     background-color: var(--mainGrey);
     padding: 25px;
@@ -376,6 +373,7 @@ footer {
     top: 800px;
 }
 
+/* Footer ending */
 /* Controls prod page prod columns */
 .col-md-4 {
     position: relative;
@@ -384,6 +382,7 @@ footer {
     padding-left: 45px;
 }
 
+/* Clock beginning */
 #clock {
     position: relative;
     padding: 30px;
@@ -416,6 +415,7 @@ footer {
 
 }
 
+/* Clock ending */
 h2 {
     text-align: center;
 }
@@ -423,4 +423,5 @@ h2 {
 p {
     margin: -10px 0 0px;
     font-size: 25px;
+
 }

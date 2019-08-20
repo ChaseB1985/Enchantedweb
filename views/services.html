@@ -35,32 +35,28 @@
   </div>
   <!-- Nav bar -->
   <nav class="navbar navbar-inverse">
+    <a class="navbar-brand" href="/index">Enchanted Lighting</a>
     <div class="navbar-center">
       <span class="nav-icon">
-        <i class="fas fa-bars"></i>
+
       </span>
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/index">Enchanted Lighting</a>
+
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="collapse navbar-collapse" id="#myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="/index">Home</a></li>
           <li><a href="/products">Products</a></li>
           <li class="active"><a href="/services">Services</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
 
       </div>
-      <!-- <img src="/images/logo.svg" alt="store logo"> -->
-      <div class="">
+
+      <div class="cart-btn">
         <span class="nav-icon">
-          <i class="fas fa-bezier-curve"></i>
+          <i class="fas fa-cart-plus"></i>
         </span>
+        <div class="cart-items">0</div>
       </div>
     </div>
   </nav>
@@ -97,6 +93,29 @@
     </div>
   </div>
 
+  <!-- cart -->
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fas fa-window-close"></i>
+      </span>
+      <h2>your cart</h2>
+      <div class="cart-content">
+        <!-- cart item -->
+        <!-- <div class="cart-item">
+          
+        </div> -->
+        <!-- end of cart item -->
+      </div>
+      <div class="cart-footer">
+        <h3>your total: $ <span class="cart-total">0
+          </span> </h3>
+        <button class="clear-cart banner-btn">clear cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of cart -->
+
   <footer class="container-fluid text-center">
     <p>Online Store Copyright</p>
     <form class="form-inline">Get deals:
@@ -110,7 +129,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
   <!-- add contentful link here later  -->
-  <!-- <script type="text/javascript" src="/js/app.js"></script> -->
+  <script type="text/javascript" src="/js/app.js"></script>
 
 
 
