@@ -425,3 +425,138 @@ p {
     font-size: 25px;
 
 }
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    footer {
+        background-color: var(--mainGrey);
+        padding: 25px;
+        margin-top: 50px;
+        border: 1px solid;
+        height: 30%;
+        position: relative;
+        width: 100%;
+    }
+
+    #foot {
+        top: 800px;
+    }
+
+    .navbar {
+        position: sticky;
+        margin-top: -30px;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background: var(--mainGrey);
+        z-index: 1;
+    }
+
+    .navbar-center {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3.5rem;
+        font-size: 15px;
+
+    }
+
+    .navbar-brand {
+        font-size: 15px;
+
+        text-align: left;
+    }
+
+    .nav-icon {
+        font-size: 1.5rem;
+    }
+
+    .cart {
+        width: 25vw;
+        min-width: 450px;
+    }
+
+    .cart-btn {
+        position: relative;
+        cursor: pointer;
+        left: 10px;
+    }
+
+    .cart-items {
+        position: absolute;
+        top: 0px;
+        right: -20px;
+        background: var(--mainBlack);
+        padding: 0 5px;
+        border-radius: 30%;
+        color: var(--mainWhite);
+    }
+
+    #clock {
+        position: relative;
+        padding: 10px;
+        margin-top: 20px;
+        font-family: 'Vidaloka', 'Courier New', Courier, monospace;
+        font-size: 10px;
+        font-weight: 900;
+        background: var(--mainGrey);
+        border: 1px solid;
+
+    }
+
+    #countdownText.opened .close,
+    #countdownText.closed .open {
+        display: inline;
+        color: var(--mainGrey);
+        opacity: 1;
+        font-size: 20px;
+        min-height: 50px;
+        margin-top: 15px;
+        border: 1px solid transparent;
+    }
+}
